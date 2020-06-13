@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/HumbertoChiesi/testing/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HumbertoChiesi/testing/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site</title>
+	<link type="text/css" href="../css/siteMain.css" rel="stylesheet"></link>
+	<script src="../js/siteCmdas.js" type="text/javascript"></script>
+	<script src="https://kit.fontawesome.com/3b108c4584.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="navBar">
+		<button id="navBt" onclick="toggleMenu()">
+			<i class="fas fa-bars"></i>
+		</button>
+		<a href="siteMain.html" id="logo"><span>BENRI</span></a>
+	</div>
+	<div id="sideBar">
+		<ul>
+			<li>
+				<a href="" id="aT">
+					<i  class="fas fa-receipt"></i>
+					<span class="txt" id="txt1">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="siteCmdas.html" id="bT">
+					<i  class="fas fa-utensils"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="" id="cT">
+					<i  class="far fa-square"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="" id="dT">
+					<i  class="fas fa-chart-bar"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="login.html" id="eT">
+					<i  class="fas fa-sign-out-alt"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
