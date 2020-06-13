@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial;
+  font-weight: 700;
+}
+
+body{
+  background-color: #f0e4e4;
+}
+#navBar {
+  position: fixed;
+  color: #a81313;
+  font-size: 30px;
+  background-color: white;
+  padding: 20px 0px 20px 30px;
+  border-bottom: 1.5px solid #a81313;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+#logo {
+  color: #a81313;
+  margin-left: 60px;
+}
+#navBt{
+  border: none;
+  background-color: white;
+  border-color: #ff1919; 
+  padding: 5px 5px 5px 5px;
+  display: inline-block;
+}
+#navBt i{
+  margin: 0;
+  font-size: 24px;
+  color: #a81313;
+}
+#navBt:hover {
+  cursor: pointer;
+}
+#sideBar{
+  position: fixed;
+  height: 100%;
+  background-color: #a81313;
+  z-index: 1000;
+  top: 77.5px;
+}
+#sideBar a {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+#sideBar i{
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  vertical-align: middle;
+  position: relative;
+  padding: 20px 0px 20px 10px;
+  width: 50px;
+
+}
+.txt {
+  width: 150px;
+  padding: 20px 0 20px 0;
+  display: none;
+}
+#sideBar.active .txt {
+  display: inline-block;
+}
+#sideBar li:hover{
+  background-color: #ff4336;
+  cursor: pointer;
+}

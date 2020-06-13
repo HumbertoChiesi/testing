@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link type="text/css" href="../css/registro.css" rel="stylesheet"></link>
+	<script src="../js/registro.js" type="text/javascript" ></script>
+	<script src="https://kit.fontawesome.com/3b108c4584.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<form class="cajaRegistro" id="formulario">
+		<h1>Registrarte</h1>
+		<div class="txtInpt" id="txtInptNom">
+			<input type="text" name="nombre" class="obligatorio" placeholder="Nombre" id="nombre" onchange="validarNom()">
+			<i class="fas fa-exclamation-circle" id="nombreError"></i>
+		</div>
+		<div class="txtInpt" id="txtInptEmail">
+			<input type="text" name="email" class="obligatorio" placeholder="Email" id="email" onchange="validarEmail()">
+			<i class="fas fa-exclamation-circle" id="emailError"></i>
+		</div>
+		<div class="txtInpt" id="txtInptTel">
+			<input type="text" name="telefono" class="obligatorio" placeholder="Telefono" id="telefono" onchange="validarTel()">
+			<i class="fas fa-exclamation-circle" id="telefonoError"></i>
+		</div>
+		<div class="txtInpt" id="txtInptPass">
+			<input type="password" name="password" class="obligatorio" placeholder="password(3-14) *sin caracteres especiales" id="pass" onchange="validarPass()">
+			<i class="fas fa-exclamation-circle" id="passError"></i>
+		</div>
+		<div class="enviarInpt">
+			<button type="button" id="enviarBt" onclick="validarTodo()">Registrarte</button>
+		</div>
+		<div class="volver">
+			<a href="login.html"><span>Volver al login</span></a>
+		</div>
+	</form>
+
+</body>
+</html>

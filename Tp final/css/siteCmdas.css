@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial;
+  font-weight: 700;
+}
+
+body{
+  background-color: #f0e4e4;
+}
+#navBar {
+  position: fixed;
+	color: #a81313;
+	font-size: 30px;
+	background-color: white;
+	padding: 20px 0px 20px 30px;
+	border-bottom: 1.5px solid #a81313;
+  width: 100%;
+  top: 0;
+  z-index: 1050;
+}
+#logo {
+  color: #a81313;
+  margin-left: 60px;
+}
+#navBt{
+  border: none;
+  background-color: white;
+  border-color: #ff1919; 
+  padding: 5px 5px 5px 5px;
+  display: inline-block;
+}
+#navBt i{
+  margin: 0;
+  font-size: 24px;
+  color: #a81313;
+}
+#navBt:hover {
+  cursor: pointer;
+}
+#sideBar{
+  position: fixed;
+  height: 100%;
+  background-color: #a81313;
+  top: 77.5px;
+}
+#sideBar a {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+#sideBar i{
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  vertical-align: middle;
+  position: relative;
+  padding: 20px 0px 20px 10px;
+  width: 50px;
+
+}
+.txt {
+  width: 150px;
+  padding: 20px 0 20px 0;
+  display: none;
+}
+#sideBar.active .txt {
+  display: inline-block;
+}
+#sideBar li:hover{
+  background-color: #ff4336;
+  cursor: pointer;
+}
+.txtInpt {
+  text-align: center;
+}
+.txtInpt input{
+  width: 80%;
+  margin: 20px 0 15px 0;
+  padding: 5px 0 5px 0;
+  border: none;
+    border-bottom: 1px solid grey;
+    background-color: #fcfcfc;
+}
+.txtInptError {
+  text-align: center;
+}
+.txtInptError input{
+  width: 80%;
+  margin: 20px 0 15px 0;
+  padding: 5px 0 5px 0;
+  border: none;
+    border: 2px solid red;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+}
+.txtInptError i {
+  display: inline;
+  position: absolute;
+  float: right;
+  margin-top: 23px;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+}
+.enviarInpt{
+  text-align: center;
+}
+.enviarInpt button {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background-color: #ff4040;
+  width: 80%;
+  padding: 10px 0 10px 0;
+}
+.enviarInpt button:hover{
+  color: #a1a1a1;
+  cursor: pointer;
+}
+.txtInpt i {
+  display: inline;
+  position: absolute;
+  float: right;
+  margin-top: 20px;
+  color: red;
+  vertical-align: middle;
+  display: none;
+}
+#closeBt {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 26px;
+}
+#bg.act {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    z-index: 1050;
+}
+#adicionar {
+  display: none;
+}
+#adicionar.active {
+  position: absolute;
+  background-color: #fcfcfc;
+  width: 400px;
+  height: 380px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  z-index: 1050;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+}
+#adicionar h1{
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#mainCb {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.5);
+}
+#mainDiv {
+  margin-right: 20px;
+  margin-left: 70px;
+  margin-top: 97.5px;
+  transition: all 500ms ;
+}
+#mainDiv.active {
+  margin-left: 220px;
+}
+#cbCnt {
+  padding: 20px 20px 20px 20px;
+}
+#cbLogo {
+  font-size: 30px;
+  display: block;
+  color: #a81313;
+}
+#lcl {
+  margin-top: 20px;
+  color: grey;
+}
+#lcl a{
+  color: grey;
+}
+#lcl i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#main {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.5);
+  padding: 20px 20px 20px 20px;
+}
+#addCmd{
+  margin-top: auto;
+  margin-left: auto;
+}
+#addCmd button{
+  background: none;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 16px;
+  height: 36px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-shadow: none;
+  cursor: pointer;
+}
+#addCmd:hover{
+  color: #a1a1a1;
+}

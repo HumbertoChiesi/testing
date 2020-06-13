@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site</title>
+	<link type="text/css" href="../css/siteCmdas.css" rel="stylesheet"></link>
+	<script src="../js/siteCmdas.js" type="text/javascript"></script>
+	<script src="https://kit.fontawesome.com/3b108c4584.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="navBar">
+		<button id="navBt" onclick="toggleMenu()">
+			<i class="fas fa-bars"></i>
+		</button>
+		<a href="siteMain.html" id="logo"><span>BENRI</span></a>
+	</div>
+	<div id="sideBar">
+		<ul>
+			<li>
+				<a href="" id="aT">
+					<i  class="fas fa-receipt"></i>
+					<span class="txt" id="txt1">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="siteCmdas.html" id="bT">
+					<i  class="fas fa-utensils"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="" id="cT">
+					<i  class="far fa-square"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="" id="dT">
+					<i  class="fas fa-chart-bar"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+			<li>
+				<a href="login.html" id="eT">
+					<i  class="fas fa-sign-out-alt"></i>
+					<span class="txt">TEST</span>
+				</a><br>
+			</li>
+		</ul>
+	</div>
+	<div id="mainDiv">
+		<div id="mainCb">
+			<div id="cbCnt">
+				<span id="cbLogo">BENRI</span>
+				<div id="lcl">
+					<a href="siteMain.html"><span>Home</span></a>
+					<i class="fas fa-chevron-right" ></i>
+					<span>Comidas</span>
+				</div>
+				
+			</div>
+		</div>
+		<div id="main">
+			
+			<div id="addCmd">
+				<button onclick="openAdd()">Adicionar Comida</button>
+			</div>
+		</div>
+	</div>
+	<div id="bg">
+			<div id="adicionar">
+				<form class="cajaAdd" id="addc">
+					<button type="button" id="closeBt"><i class="fas fa-times" onclick="closeAdd()"></i></button>
+					<h1>Adicionar Comida</h1>
+					<div class="txtInpt" id="txtInptNom">
+						<input type="text" name="nombre" class="obligatorio" placeholder="Nombre de la comida" id="nombre" onchange="validarNombre()">
+						<i class="fas fa-exclamation-circle" id="nombreError"></i>
+					</div>
+					<div class="txtInpt" id="txtInptPrecio">
+						<input type="text" name="precio" class="obligatorio" placeholder="Precio" id="precio" onchange="validarNum()">
+						<i class="fas fa-exclamation-circle" id="precioError"></i>
+					</div>
+					<div class="txtInpt" id="txtInptMoneda">
+						<input type="text" name="moneda" class="obligatorio" placeholder="Moneda" id="moneda" onchange="validarMoneda()">
+						<i class="fas fa-exclamation-circle" id="monedaError"></i>
+					</div>
+					<div class="enviarInpt">
+						<button type="button" id="enviarBt" onclick="validarTodo()">Adicionar</button>
+					</div>			
+				</form>
+			</div>
+		</div>
+</body>
+</html>

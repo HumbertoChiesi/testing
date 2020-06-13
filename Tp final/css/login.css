@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial;
+}
+
+body{
+  background-color: #f0e4e4;
+}
+.cajaLogin {
+	position: absolute;
+	background-color: #fcfcfc;
+	width: 400px;
+	height: 350px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+}
+.cajaLogin h1 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+.txtInpt {
+	text-align: center;
+}
+.txtInpt input{
+	width: 80%;
+	margin: 20px 0 15px 0;
+	padding: 5px 0 5px 0;
+	border: none;
+  	border-bottom: 1px solid grey;
+  	background-color: #fcfcfc;
+}
+.enviarInpt{
+	text-align: center;
+}
+.enviarInpt input {
+	margin-top: 40px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	color: white;
+	border: none;
+	background-color: #ff4040;
+	width: 80%;
+	padding: 10px 0 10px 0;
+}
+.enviarInpt input:hover{
+	background-color: #bd2f2f;
+	cursor: pointer;
+}
+.rgstMsj {
+	padding-left: 10%;
+	text-align: left;
+	font-size: 16px;
+}
